@@ -72,7 +72,7 @@ public class SendSms {
                                                        new AuthScope(AuthScope.ANY_HOST, AuthScope.ANY_PORT),
                                                        new UsernamePasswordCredentials("Exotel SID", "Exotel Token")
                                                        );
-        HttpPost post = new HttpPost("https://twilix.exotel.in/v1/Accounts/Exotel SID/Sms/send");
+        HttpPost post = new HttpPost("https://<Exotel SID>:<Exotel Token>@twilix.exotel.in/v1/Accounts/<Exotel SID>/Sms/send");
         List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
  
         /* 'From' doesn't matter; For transactional, this will be replaced with your SenderId;
