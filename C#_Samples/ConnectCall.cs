@@ -104,7 +104,7 @@ namespace ExotelSDK
 			ServicePointManager.ServerCertificateValidationCallback = delegate {
 				return true;
 			};
-			string smsURL = "https://twilix.exotel.in/v1/Accounts/Exotel/Calls/connect";
+			string smsURL = "https://twilix.exotel.in/v1/Accounts/<Your Exotel Sid>/Calls/connect";
 			HttpWebRequest objRequest = (HttpWebRequest)WebRequest.Create (smsURL);
 			objRequest.Credentials = new NetworkCredential (this.SID, this.token);
 			objRequest.Method = "POST";
